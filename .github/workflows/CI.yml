@@ -27,4 +27,5 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
     - name: test
       run: |
+        sudo apt update && sudo apt install libmagickwand-dev gsfonts ghostscript
         bundle install
